@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOdule 34 practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="bg-[#0D6EFD0D]">
+        <section class="max-w-screen-xl mx-auto text-center pt-10">
+            <div class="flex justify-between mb-10 px-8 lg:px-0">
+                <h3 class="text-2xl sm:text-3xl lg:text-3xl font-medium">Hot Gadgets</h3>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <h1 class="text-3xl lg:text-6xl mb-5">We have Phone Iphone,Samsung,Oppo</h1>
+            <p class="px-6 lg:px-96 mb-5">There are many variations of passages of available, but the majority have
+                suffered</p>
+            <button class="btn btn-primary mb-16">Buy Now</button>
+        </section>
+    </header>
+    <main class="max-w-screen-xl mx-auto pb-10">
+        <h1 class="text-3xl lg:text-5xl text-center mt-16 mb-8">Search your phone</h1>
+
+        <div class="flex justify-center px-6 lg:px-0">
+            <input type="" name="" id="search-input" class="w-[750px] bg-[#100F0F0D] pl-8 rounded-lg"
+                placeholder="Search your phone">
+            <button onclick="searchBtn()" class="btn btn-primary">Search</button>
+        </div>
+
+        <!-- spinner -->
+        <div id="spinner-loading" class="text-center mt-20 hidden">
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+
+        <div id="all-phone-received" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-0">
+        </div>
+        <div id="show-all-con" class="text-center mt-10 mb-10 hidden">
+            <button onclick="handleShowAll()" class="btn btn-primary">Show All</button>
+        </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 id="phone-name" class="font-bold text-lg"></h3>
+                <div id="show-details-con">
+
+                </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+
+
+    </main>
+    <footer class="bg-[#0D6EFD0D]">
+        <section class="max-w-screen-xl mx-auto px-6 py-6 lg:px-0 lg:py-20">
+            <div class="flex gap-12 sm:gap-52 lg:justify-between">
+                <div>
+                    <h2 class="text-xl lg:text-3xl font-bold">Hot Gadgets</h2>
+                    <p>You can definitely work.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row lg:flex-row gap-5 items-center">
+                    <div class="flex gap-3">
+                        <img src="facebook.png" alt="">
+                        <img src="twitter (2).png" alt="">
+                        <img src="instagram (2).png" alt="">
+                    </div>
+                    <button class="btn btn-primary">Join Premium</button>
+                </div>
+            </div>
+            <hr class="my-10">
+            <div class="grid lg:gap-56 grid-cols-2 sm:grid-cols-4 lg:grid-cols-4">
+                <div>
+                    <h4>Product</h4>
+                    <h4>Browse jobs</h4>
+                    <h4>Remote jobs</h4>
+                    <h4>Startup jobs</h4>
+                    <h4>Company jobs</h4>
+                </div>
+                <div>
+                    <h4>Popular</h4>
+                    <h4>UIUX Design</h4>
+                    <h4>Product Design</h4>
+                    <h4>Back-End Developer</h4>
+                    <h4>Front-End Developer</h4>
+                </div>
+                <div>
+                    <h4>Resource</h4>
+                    <h4>Faq</h4>
+                    <h4>Support</h4>
+                    <h4>Privacy Policy</h4>
+                    <h4>Terms of Service</h4>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <h4>About Us</h4>
+                    <h4>Contact Us</h4>
+                    <h4>Career Tips</h4>
+                    <h4>Careers</h4>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
